@@ -1,2 +1,2 @@
 # odin-restaurant
-tabbed restaurant page running to demo npm &amp; node.js knowledge
+tabbed restaurant page to demo npm &amp; node.js knowledge
