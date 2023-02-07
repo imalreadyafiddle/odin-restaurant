@@ -17,7 +17,6 @@ function tabSwitcher(tab) {
     navButtons[tab].classList.add("nav-item-selected");
     // call the function that populates content corresponding to clicked tab
     if (tab == 0) {
-      console.log("About loaded...");
       aboutContent();
     } else if (tab == 1) {
       menuContent();
