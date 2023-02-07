@@ -46,5 +46,13 @@ function createHeader() {
   aboutButton.classList.add("nav-item-selected");
 }
 
+// create a wrapper so about/location/menu js files can easily wipe out exist HTML
+function createContentWrapper() {
+  let mainContent = document.getElementById("content");
+  let contentWrapper = document.createElement("div");
+  contentWrapper.setAttribute("id", "contentWrapper");
+  mainContent.appendChild(contentWrapper);
+}
+
 // export the function to be called by index.js
-export { createHeader };
+export { createHeader, createContentWrapper };

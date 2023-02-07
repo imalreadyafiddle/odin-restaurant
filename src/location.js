@@ -1,6 +1,6 @@
-import burger1 from "./burger1.png";
+import location1 from "./location1.png";
 
-function aboutContent() {
+function locationContent() {
   let contentWrapper = document.getElementById("contentWrapper");
   contentWrapper.innerHTML = "";
 
@@ -11,7 +11,7 @@ function aboutContent() {
 
   // create and append h1
   let aboutHeader = document.createElement("h1");
-  aboutHeader.innerText = "About Our Burgers";
+  aboutHeader.innerText = "Where We're Located";
   aboutWrapper.appendChild(aboutHeader);
 
   // create and append about blurb wrapper
@@ -22,28 +22,22 @@ function aboutContent() {
   // add that tasty burger image
   let burgerImg = document.createElement("img");
   burgerImg.setAttribute("id", "aboutBurger");
-  burgerImg.src = burger1;
+  burgerImg.src = location1;
   aboutBlurb.appendChild(burgerImg);
 
   // but what's on that burger?
   let burgerFacts = document.createElement("ul");
   burgerFacts.setAttribute("id", "burgerFacts");
-  burgerFacts.innerText = "Our world's most perfect burgers are made with:";
+  burgerFacts.innerHTML = `We're located in the city of Nowhere, <br> you can get to us by:`;
   aboutBlurb.appendChild(burgerFacts);
   let burgerFactArray = [
-    "Brioche Bun",
-    "100% Angus Beef",
-    "Real Cheddar Cheese",
-    "Tomatoes, Lettuce, and Pickles",
-    "Our Signature Burger Sauce",
+    "Take Exit -1 from Route √66",
+    "Turn right off the exit",
+    "Continue about 1.5 miles",
+    "We're located on the right-hand side of the road",
+    "Ample parking behind the building",
   ];
-  // let burgerFactArray = [
-  //   "Bread, humans like bread, right?",
-  //   "Beef, probably.",
-  //   "Cheese? Yes, definitely cheese.",
-  //   "Little red roundbois, what're those again?",
-  //   "Lettuce to get stuck between your teeth.",
-  // ];
+
   for (let i = 1; i <= 5; i++) {
     let burgerFact = document.createElement("li");
     burgerFact.setAttribute(`id`, `burgerFact${i}`);
@@ -53,4 +47,4 @@ function aboutContent() {
 }
 
 // export the function to be called by index.js
-export { aboutContent };
+export { locationContent };
