@@ -37,13 +37,6 @@ function aboutContent() {
     "Tomatoes, Lettuce, and Pickles",
     "Our Signature Burger Sauce",
   ];
-  // let burgerFactArray = [
-  //   "Bread, humans like bread, right?",
-  //   "Beef, probably.",
-  //   "Cheese? Yes, definitely cheese.",
-  //   "Little red roundbois, what're those again?",
-  //   "Lettuce to get stuck between your teeth.",
-  // ];
   for (let i = 1; i <= 5; i++) {
     let burgerFact = document.createElement("li");
     burgerFact.setAttribute(`id`, `burgerFact${i}`);
